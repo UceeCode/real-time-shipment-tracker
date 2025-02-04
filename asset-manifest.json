@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/real-time-shipment-tracker/static/css/main.72bc5531.css",
+    "main.js": "/real-time-shipment-tracker/static/js/main.b5ec73bf.js",
+    "index.html": "/real-time-shipment-tracker/index.html",
+    "main.72bc5531.css.map": "/real-time-shipment-tracker/static/css/main.72bc5531.css.map",
+    "main.b5ec73bf.js.map": "/real-time-shipment-tracker/static/js/main.b5ec73bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72bc5531.css",
+    "static/js/main.b5ec73bf.js"
+  ]
+}
