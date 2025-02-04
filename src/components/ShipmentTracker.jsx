@@ -24,6 +24,8 @@ const ShipmentTracker = () => {
 
     return (
         <div className="w-full max-w-7xl mx-auto bg-white shadow-lg rounded-lg p-6 mt-10">
+           
+            
             <h1 className="text-4xl font-extrabold text-center mb-6 text-gradient">📦 Real-Time Shipment Tracker</h1>
             
             <div className="relative mb-6">
@@ -31,7 +33,7 @@ const ShipmentTracker = () => {
                 <input
                     type="text"
                     placeholder="Search by Tracking ID..."
-                    className="w-full p-4 pl-12 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full p-4 pl-12 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                 />
@@ -41,7 +43,14 @@ const ShipmentTracker = () => {
                 {filteredShipments.length === 0 ? (
                     <p className="text-gray-500 text-center col-span-4">No matching shipments found.</p>
                 ) : (
-                    filteredShipments.map((shipment, index) => <ShipmentItem key={index} shipment={shipment} />)
+                    filteredShipments.map((shipment, index) => (
+                        <div 
+                            key={index} 
+                            className="transition-transform transform hover:scale-105 hover:bg-blue-100 p-4 rounded-lg shadow-lg cursor-pointer"
+                        >
+                            <ShipmentItem shipment={shipment} />
+                        </div>
+                    ))
                 )}
             </div>
         </div>
