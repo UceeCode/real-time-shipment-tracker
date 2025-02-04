@@ -1,4 +1,3 @@
-// src/components/ShipmentTracker.jsx
 import { useState, useEffect } from "react";
 import ShipmentItem from "./ShipmentItem";
 import { SearchIcon } from "@heroicons/react/outline";

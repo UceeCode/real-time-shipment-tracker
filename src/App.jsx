@@ -1,4 +1,3 @@
-// src/App.js
 import ShipmentTracker from "./components/ShipmentTracker";
 
 function App() {
